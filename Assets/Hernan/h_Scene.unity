@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotoModel: {fileID: 0}
   imDie:
     m_PersistentCalls:
       m_Calls:
@@ -306,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotoModel: {fileID: 0}
   imDie:
     m_PersistentCalls:
       m_Calls:
