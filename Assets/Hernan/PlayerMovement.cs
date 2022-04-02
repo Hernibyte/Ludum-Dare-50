@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     CharacterController characterController;
     bool isGrounded;
-    public Vector3 velocity;
+    Vector3 velocity;
 
     void Awake()
     {
