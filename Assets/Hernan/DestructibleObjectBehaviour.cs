@@ -10,5 +10,6 @@ public class DestructibleObjectBehaviour : MonoBehaviour, IHitabble
     public void ReciveHit()
     {
         imDie.Invoke();
+        Destroy(gameObject);
     }
 }
