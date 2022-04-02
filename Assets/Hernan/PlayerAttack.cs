@@ -16,7 +16,8 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Destroy(hit.transform.gameObject);
+                IHitabble hitabble = hit.transform.gameObject.GetComponent<IHitabble>();
+                hitabble.ReciveHit();
             }
         }
     }
