@@ -41,7 +41,6 @@ public class Dialogo : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;

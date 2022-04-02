@@ -25,6 +25,26 @@ public class DialogoController : MonoBehaviour
         dialogo.lines.Add(container.dialogos[index]);
     }
 
+    public void SetBadEnd()
+    {
+        dialogo.textComponent.text = string.Empty;
+        dialogo.lines.Clear();
+        foreach (string s in container.badEndDialogs)
+        {
+            dialogo.lines.Add(s);
+        }
+    }
+
+    public void SetGoodEnd()
+    {
+        dialogo.textComponent.text = string.Empty;
+        dialogo.lines.Clear();
+        foreach (string s in container.goodEndDialogs)
+        {
+            dialogo.lines.Add(s);
+        }
+    }
+
     public void OcultarDialog()
     {
         StopAllCoroutines();

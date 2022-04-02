@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float gameTime;
     [SerializeField] int points;
     [SerializeField] int excusesAmount;
+    [SerializeField] DialogoController dialogoController;
 
     const int maxExcuses = 10;
     bool ifEndGame = false;
@@ -24,18 +25,25 @@ public class GameManager : MonoBehaviour
     {
         if (gameTime <= 0)
         {
-            Debug.Log("bad end");
             ifEndGame = true;
+            if (excusesAmount >= maxExcuses)
+            {
+                Debug.Log("good end");
+                dialogoController.SetGoodEnd();
+            }
+            else
+            {
+                Debug.Log("bad end");
+                dialogoController.SetBadEnd();
+            }
+            dialogoController.MostrarDialog();
         }
     }
 
     void CheckExcuses()
     {
         if (excusesAmount >= maxExcuses)
-        {
-            Debug.Log("good end");
-            ifEndGame = true;
-        }
+            excusesAmount = maxExcuses;
     }
 
     public void AddPoints(int point)
