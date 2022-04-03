@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int points;
     [SerializeField] int excusesAmount;
     [SerializeField] DialogoController dialogoController;
+    [SerializeField] MenuManager menuManager;
 
     const int maxExcuses = 10;
     bool ifEndGame = false;
@@ -18,6 +19,17 @@ public class GameManager : MonoBehaviour
         {
             gameTime -= Time.deltaTime;
             CheckTime();
+        }
+        SetPause();
+    }
+
+    void SetPause()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0;
+            menuManager.ShowMenu();
         }
     }
 

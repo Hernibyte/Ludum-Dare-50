@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] GameObject menu;
+
     [SerializeField] GameObject optionsPanel;
     [SerializeField] GameObject controlsPanel;
 
@@ -20,6 +22,18 @@ public class MenuManager : MonoBehaviour
     {
         optionsPanel.SetActive(false);
         controlsPanel.SetActive(false);
+    }
+
+    public void ShowMenu()
+    {
+        menu.SetActive(true);
+    }
+
+    public void Resume()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        menu.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     public void Play()
@@ -50,6 +64,12 @@ public class MenuManager : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        Time.timeScale = 1.0f;
     }
 
     public void ChangeSFXVol()
