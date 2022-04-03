@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float interactionDistance;
     [SerializeField] Transform playerCamera;
     [SerializeField] LayerMask destructibleObject_LayerMask;
+    [SerializeField] Animator animator;
 
     void Update()
     {
@@ -16,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                animator.SetBool("golpeo", true);
                 IHitabble hitabble = hit.transform.gameObject.GetComponent<IHitabble>();
                 hitabble.ReciveHit();
             }
