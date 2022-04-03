@@ -20,6 +20,7 @@ public class golpeanimbhvr : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("golpeo", false);
+        PlayerAttack.Instance.Hit();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
