@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Plate
+  - MultiPlate
+  - Vasija
+  - Tele
+  - Madera
   layers:
   - Default
   - TransparentFX
