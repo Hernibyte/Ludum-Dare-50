@@ -5,13 +5,13 @@ using UnityEngine.Events;
 
 public class DestructibleObjectBehaviour : MonoBehaviour, IHitabble
 {
-    //[SerializeField] GameObject rotoModel;
+    [SerializeField] GameObject rotoModel;
     public UnityEvent imDie;
 
     public void ReciveHit()
     {
         imDie.Invoke();
-        //Instantiate(rotoModel, transform.position, Quaternion.identity);
+        Instantiate(rotoModel, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
