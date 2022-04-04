@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -10,10 +11,11 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] GameObject optionsPanel;
     [SerializeField] GameObject controlsPanel;
-
     [SerializeField] Slider sfxSlider;
     [SerializeField] Slider bgmSlider;
     [SerializeField] SoundManager soundManager;
+    public ExcuseBar excusebar;
+    [SerializeField] TMP_Text Contador;
 
     [Header("FullScreen toggle")]
     [SerializeField] Toggle toggle;
@@ -86,4 +88,10 @@ public class MenuManager : MonoBehaviour
     {
         Screen.SetResolution(Screen.width, Screen.height, toggle.isOn);
     }
+
+    public void UpdateTimer(int time)
+    {
+        Contador.text = time.ToString();
+    }
+
 }

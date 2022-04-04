@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         if (!ifEndGame)
         {
             gameTime -= Time.deltaTime;
+            menuManager.UpdateTimer((int)gameTime);
             CheckTime();
         }
         SetPause();
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
         {
             excusesAmount += excuse;
             CheckExcuses();
+            menuManager.excusebar.Actualizarbarra(excusesAmount);
         }
     }
 }
