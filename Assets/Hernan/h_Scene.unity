@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,9 +263,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 28896388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd4edbe9878596449868e31a04b05c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotoModel: {fileID: 2560407469931274887, guid: 8998c9a3fb1683946a5e27ff48a44d7a,
+    type: 3}
   imDie:
     m_PersistentCalls:
       m_Calls:
@@ -287,6 +289,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 285227779}
+        m_MethodName: AddExcuses
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3328,6 +3341,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 703864869}
     m_Modifications:
+    - target: {fileID: 4199565775298069384, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8421241387241629953, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
         type: 3}
       propertyPath: m_RootOrder
@@ -3398,10 +3416,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831214232775846841, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 9193415568029037499, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
         type: 3}
       propertyPath: m_Name
       value: Tele Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193415568029037499, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf, type: 3}
@@ -8907,7 +8935,7 @@ PrefabInstance:
     - target: {fileID: 3267144449258447738, guid: 9304ea95fb33c4f4396cc99e16f8c48c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.574
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 3267144449258447738, guid: 9304ea95fb33c4f4396cc99e16f8c48c,
         type: 3}
@@ -9002,15 +9030,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 722418218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd4edbe9878596449868e31a04b05c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotoModel: {fileID: 226488089445165848, guid: 6540d83589499dd439b4187cad76d0d3,
+    type: 3}
   imDie:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1404985095}
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: ChangeDialog
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9026,6 +9056,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 285227779}
+        m_MethodName: AddExcuses
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15671,6 +15712,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e65456ea53d61c4a8e2b6cf706e4e67, type: 3}
+--- !u!1 &1289127947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9193415568029037499, guid: 1cfe23a6ba79d8a4e84dd088d50adfcf,
+    type: 3}
+  m_PrefabInstance: {fileID: 325491180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289127949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289127947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotoModel: {fileID: 2560407469931274887, guid: 8998c9a3fb1683946a5e27ff48a44d7a,
+    type: 3}
+  imDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1404985095}
+        m_MethodName: ChangeDialog
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1404985095}
+        m_MethodName: MostrarDialog
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 285227779}
+        m_MethodName: AddExcuses
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1290226113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 229269456213693685, guid: 4e65456ea53d61c4a8e2b6cf706e4e67,
@@ -23078,9 +23175,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1944454934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd4edbe9878596449868e31a04b05c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6700b345cbdb0504a891ca69d7570783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotoModel: {fileID: 2560407469931274887, guid: 8998c9a3fb1683946a5e27ff48a44d7a,
+    type: 3}
   imDie:
     m_PersistentCalls:
       m_Calls:
@@ -23090,7 +23189,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23102,6 +23201,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 285227779}
+        m_MethodName: AddExcuses
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
