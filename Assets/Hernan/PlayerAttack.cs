@@ -8,7 +8,7 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField] float interactionDistance;
     [SerializeField] Transform playerCamera;
-    [SerializeField] LayerMask destructibleObject_LayerMask;
+    [SerializeField] LayerMask interactObj;
     [SerializeField] Animator animator;
 
     void Awake()
@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
     public void Hit()
     {
         RaycastHit hit;
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, interactionDistance, destructibleObject_LayerMask))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, interactionDistance, interactObj))
         {
             IHitabble hitabble = hit.transform.gameObject.GetComponent<IHitabble>();
             hitabble.ReciveHit();
