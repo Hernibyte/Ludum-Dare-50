@@ -70,6 +70,7 @@ public class MenuManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1.0f;
     }

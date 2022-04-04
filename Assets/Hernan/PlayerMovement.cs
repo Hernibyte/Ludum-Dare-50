@@ -22,7 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Move();
+        if (!GameManager.instance.ifEndGame)
+            Move();
         FisicsxD();
     }
 
