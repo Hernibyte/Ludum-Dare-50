@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] LayerMask interactObj;
     [SerializeField] Animator animator;
 
+    public AudioSource japishSound;
+
     void Awake()
     {
         Instance = this;
@@ -22,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             animator.SetBool("golpeo", true);
+            japishSound.Play();
         }
     }
 

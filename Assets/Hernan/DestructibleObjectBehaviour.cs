@@ -8,8 +8,10 @@ public class DestructibleObjectBehaviour : MonoBehaviour, IHitabble
     [SerializeField] GameObject rotoModel;
     public UnityEvent imDie;
 
+
+
     public void ReciveHit()
-    {
+    {  
         imDie.Invoke();
         Instantiate(rotoModel, transform.position, Quaternion.identity);
         Destroy(gameObject);
