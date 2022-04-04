@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1375614450324450299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343439646502625754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47.767006, y: 54.858105, z: 73.39188}
+  m_Center: {x: -0.25464743, y: -0.5429209, z: 0.7073596}
 --- !u!1001 &2190353522597960843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,7 +88,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9f6e602c967ee894bb4d767c158d755a,
         type: 3}
       propertyPath: m_Name
-      value: Estante_pared_cocina
+      value: Estante_pared_cocina Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f6e602c967ee894bb4d767c158d755a, type: 3}
+--- !u!1 &1343439646502625754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9f6e602c967ee894bb4d767c158d755a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2190353522597960843}
+  m_PrefabAsset: {fileID: 0}
