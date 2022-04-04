@@ -5,6 +5,8 @@ using TMPro;
 
 public class Dialogo : MonoBehaviour
 {
+    [SerializeField] BlackScreenController blackScreenController;
+
     public TextMeshProUGUI textComponent;
     public List<string> lines;
     public float textSpeed;
@@ -58,7 +60,12 @@ public class Dialogo : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            if (GameManager.instance.ifEndGame)
+            {
+                blackScreenController.FundidoNegro();
+            }
+            else
+                gameObject.SetActive(false);
         }
     }
 }

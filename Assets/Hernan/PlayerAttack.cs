@@ -21,7 +21,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         Debug.DrawRay(playerCamera.position, playerCamera.forward * interactionDistance, Color.red);
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !GameManager.instance.ifEndGame)
         {
             animator.SetBool("golpeo", true);
             japishSound.Play();

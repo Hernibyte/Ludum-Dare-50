@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
     [SerializeField] float gameTime;
     [SerializeField] int points;
     [SerializeField] int excusesAmount;
     [SerializeField] DialogoController dialogoController;
     [SerializeField] MenuManager menuManager;
 
+    [SerializeField] GameObject _espawnervieja;
+
     const int maxExcuses = 10;
-    bool ifEndGame = false;
+    public bool ifEndGame = false;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Update()
     {
@@ -41,15 +50,14 @@ public class GameManager : MonoBehaviour
             ifEndGame = true;
             if (excusesAmount >= maxExcuses)
             {
-                Debug.Log("good end");
                 dialogoController.SetGoodEnd();
             }
             else
             {
-                Debug.Log("bad end");
                 dialogoController.SetBadEnd();
             }
             dialogoController.MostrarDialog();
+            Instantiate(_espawnervieja, transform);
         }
     }
 
