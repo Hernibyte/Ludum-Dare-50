@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &6910751253411332689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809665566752880893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 79.01012, y: 198.20604, z: 67.54949}
+  m_Center: {x: 1.3539851, y: 3.6398532, z: -3.5625682}
 --- !u!1001 &6656740111131248044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,7 +88,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e16089d4b8967c49a3415ae84d2d51a,
         type: 3}
       propertyPath: m_Name
-      value: "Ba\xF1adera"
+      value: "Ba\xF1adera Variant"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e16089d4b8967c49a3415ae84d2d51a, type: 3}
+--- !u!1 &5809665566752880893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e16089d4b8967c49a3415ae84d2d51a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6656740111131248044}
+  m_PrefabAsset: {fileID: 0}
