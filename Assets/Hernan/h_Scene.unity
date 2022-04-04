@@ -3527,6 +3527,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a835d9ed48e1c4987a511b9a2f604d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imagenes:
+  - {fileID: 21300000, guid: 837c17f426ada53438a3a0443fc2e041, type: 3}
+  - {fileID: 21300000, guid: 3bf8f1679496d5c4c80783e068095176, type: 3}
+  - {fileID: 21300000, guid: f3f4204d9b05a214abeb7d041aa60d94, type: 3}
+  - {fileID: 21300000, guid: d8571b568a485114aa2729e7898f488e, type: 3}
+  - {fileID: 21300000, guid: c0717434ad865bd4f8f89f283028d0bf, type: 3}
+  - {fileID: 21300000, guid: dc185a9d35d1a5a4791198547c0f4734, type: 3}
+  - {fileID: 21300000, guid: c7cd065f885c6c24a89870c2232f99b1, type: 3}
+  - {fileID: 21300000, guid: f453c4414add7e14aba06b68dba0e916, type: 3}
+  - {fileID: 21300000, guid: fe00992180ab12c4d9fc27dccee1925f, type: 3}
+  - {fileID: 21300000, guid: b72c39e32364cce4fa37111521e2f252, type: 3}
+  - {fileID: 21300000, guid: 19c05a7136bd5bb478f601c7d62f1ff2, type: 3}
   BarraProgreso: {fileID: 1909013755}
 --- !u!1 &336038719
 GameObject:
@@ -23188,7 +23200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8c743ca92b7e95e4cbc165fc204c2548, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 837c17f426ada53438a3a0443fc2e041, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
