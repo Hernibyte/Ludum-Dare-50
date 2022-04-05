@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject _espawnervieja;
 
+    public AudioSource finalSound;
+
+
     const int maxExcuses = 10;
     public bool ifEndGame = false;
 
@@ -58,6 +61,7 @@ public class GameManager : MonoBehaviour
             }
             dialogoController.MostrarDialog();
             Instantiate(_espawnervieja, transform);
+            finalSound.Play();
         }
     }
 
