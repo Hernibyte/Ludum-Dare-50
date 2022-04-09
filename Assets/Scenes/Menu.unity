@@ -444,7 +444,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1257,11 +1257,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e09126707c6c14d9d3df2f74879dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
   optionsPanel: {fileID: 21946493}
   controlsPanel: {fileID: 2125221285}
   sfxSlider: {fileID: 166899600}
   bgmSlider: {fileID: 110969002}
   soundManager: {fileID: 1398494280}
+  excusebar: {fileID: 0}
+  Contador: {fileID: 0}
   toggle: {fileID: 1589983025}
 --- !u!1 &758895355
 GameObject:
